@@ -1,0 +1,94 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+  }
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #CBCE91FF, #EA738DFF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background{
+    background-color: #000000;
+    width: 450px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+}
+.grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5,90px);
+    width: 370px;
+    height: 490px;
+
+}
+.grid > button {
+    cursor: pointer;
+    outline: none;
+    width: 85px;
+    height: 86px;
+background: #FFFFFF;
+font-size: 20px;
+line-height: 24px;
+color: #000000;
+  }
+  .col{
+    width: 85px;
+    height: 86px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .col>button{
+    width: 85px;
+height: 42px;
+background: #FFFFFF;
+font-size: 20px;
+line-height: 24px;
+color: #000000;
+cursor: pointer;
+outline: none;
+  }
+  .col > button:hover {
+    background-color: #a9a9a9;
+  }
+
+    .grid > button:hover {
+      background-color: #a9a9a9;
+    }
+    .span-two {
+        grid-row: span 2;
+        width: 85px;
+
+      }
+
+      .output{
+        grid-column: 1 / -1;
+        width: 387px;
+height: 89px;
+background: #FFFEFE;
+border: 1px solid #000000;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 10px;
+      }
+
+      .output .previous-operand{
+        color: #000000;
+        font-size: 1.5rem;
+      }
+
+      .output .current-operand{
+        color: #000000;
+        font-size: 2.5rem;
+      }
